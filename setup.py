@@ -7,7 +7,7 @@ python setup.py sdist bdist_wininst upload
 """
 import sys
 import os
-
+import time
 
 def hilight(input_string):
     if sys.stdout.isatty():
@@ -52,8 +52,8 @@ with open('requirements.txt') as f:
 
 
 setup(
-    name='newspaper',
-    version='0.1.0.7',
+    name='livingbio-newspaper',
+    version=str(time.time()),
     description='Simplified python article discovery & extraction.',
     author='Lucas Ou-Yang',
     author_email='lucasyangpersonal@gmail.com',
